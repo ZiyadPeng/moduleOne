@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Rumah
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-grid class = 'home'>
+    <form #form="ngForm" method="POST">
+   
+        <ion-row>
+           <ion-input class="input" [(ngModel)]="modelName.form" name="name" placeholder="Enter Name" type="text"></ion-input>
+          </ion-row>
+          <br>
+
+          <ion-row>
+              <ion-input class="input" [(ngModel)]="modelUsername.form" name="username" placeholder="Enter Username" type="username"></ion-input>
+             </ion-row>
+             <br>
+      
+          <ion-row>
+            <ion-input class="input"[(ngModel)]="modelAge.form" name="age" placeholder="Enter Age" type="number"></ion-input>
+          </ion-row>
+          <br>
+      
+          <ion-row>
+              <ion-input class="input" [(ngModel)]="modelEmail.form" name="email"  placeholder="Enter Email" type="email"></ion-input>
+           </ion-row>
+           <br>
+      
+          <ion-row>
+                <ion-input class="input" [(ngModel)]="modelPassword.form" name="password" placeholder="Enter password" type="password"></ion-input>
+          </ion-row>
+          <br>
+          <br>
+          
+          <ion-row>
+              <ion-button class="button" color="primary" expand="block" (click)="submit(form)">SUBMIT BOI</ion-button>
+            </ion-row>
+          
+          
+          </form>
+ </ion-grid>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Futer</ion-title>
+  </ion-toolbar>
+</ion-footer>
